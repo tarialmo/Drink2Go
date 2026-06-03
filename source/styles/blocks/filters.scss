@@ -1,0 +1,106 @@
+.filters {
+  margin-bottom: 41px;
+}
+
+.filters__form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.filters__group {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.filters__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.filters__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.filters__label {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.filters__buttons {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.filters__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.filters__button:first-of-type {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.filters__button--delete {
+  background-color: $base-white;
+  color: $base-primary;
+
+  @media (min-width: $tablet-width) {
+    width: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.filters__button--delete:hover,
+.filters__button--delete:focus,
+.filters__button--delete:active,
+.filters__button--delete:disabled {
+  color: $base-white;
+}

@@ -1,0 +1,33 @@
+.goods__list {
+  margin-bottom: 40px;
+  background-color: $lightest-grey;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 30px 30px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 317px);
+    margin-bottom: 60px;
+    padding: 0;
+  }
+}
+
+.goods__item {
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.goods__link {
+  display: block;
+}

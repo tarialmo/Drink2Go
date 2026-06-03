@@ -1,0 +1,34 @@
+.copyright__link {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: -17px;
+    width: 12px;
+    height: 16px;
+    background-image: url("../../icons/icon-htmlacademy.svg");
+  }
+}
+
+.copyright__link:hover span,
+.copyright__link:focus span {
+  color: $base-primary;
+}
+
+.copyright__link:hover::after,
+.copyright__link:focus::after {
+  background-image: url("../../icons/icon-htmlacademy--hover.svg");
+}
+
+.copyright__link:active span {
+  color: $primary-darker;
+}
+
+.copyright__link:active::after {
+  background-image: url("../../icons/icon-htmlacademy--active.svg");
+}

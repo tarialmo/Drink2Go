@@ -1,0 +1,32 @@
+/* GLOBAL */
+@import "./common/variables.scss";
+@import "./common/global.scss";
+@import "./common/fonts.scss";
+
+/* BLOCKS */
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-nav-site-list.scss";
+@import "./blocks/main-nav-user-list.scss";
+@import "./blocks/main-nav-for-mobile.scss";
+@import "./blocks/main.scss";
+@import "./blocks/swiper.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/filters.scss";
+@import "./blocks/filter-range.scss";
+@import "./blocks/filter-radio.scss";
+@import "./blocks/filter-checkbox.scss";
+@import "./blocks/goods-sort.scss";
+@import "./blocks/goods.scss";
+@import "./blocks/goods-card.scss";
+@import "./blocks/goods-pagination.scss";
+@import "./blocks/map.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/footer-logo.scss";
+@import "./blocks/footer-social.scss";
+@import "./blocks/footer-nav.scss";
+@import "./blocks/copyright.scss";

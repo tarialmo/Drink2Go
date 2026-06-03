@@ -1,0 +1,146 @@
+.goods__pagination {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.goods__pagination span {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-primary;
+}
+
+.pagination__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: $base-white;
+  border: none;
+  cursor: pointer;
+
+  &:first-of-type {
+    margin-right: 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 40px;
+    height: 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 6px;
+      background-image: url("../../icons/icon-pagination-button.svg");
+      background-repeat: no-repeat;
+    }
+
+    &:last-of-type::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+
+    span {
+      color: $base-white;
+    }
+  }
+
+  &:active {
+    background-color: $primary-darker;
+
+    span {
+      color: $base-white;
+    }
+  }
+
+  &:disabled {
+    background-color: $light-grey;
+
+    span {
+      color: $base-white;
+    }
+  }
+}
+
+.pagination__list {
+  display: flex;
+  counter-reset: list-counter;
+  margin-right: 20px;
+}
+
+.pagination__item {
+  margin-right: 20px;
+  counter-increment: list-counter;
+}
+
+.pagination__list li:last-child {
+  margin-right: 0;
+}
+
+.pagination__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: $base-primary;
+  background-color: $base-white;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: counter(list-counter);
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+    color: $base-white;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+    color: $base-white;
+  }
+
+  &:disabled {
+    background-color: $light-grey;
+    color: $base-white;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .pagination__item--prev span,
+  .pagination__item--next span {
+    display: none;
+  }
+}
+
+.pagination__block.pagination__block--current {
+  background-color: transparent;
+
+  &::after {
+    color: $base-black;
+    font-weight: 700;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:disabled {
+    display: none;
+  }
+}

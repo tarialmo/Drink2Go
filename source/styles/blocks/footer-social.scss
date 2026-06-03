@@ -1,0 +1,55 @@
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-social__link {
+  display: inline-flex;
+  place-self: center center;
+  width: 20px;
+  height: 20px;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+  }
+
+  &--vk::before {
+    background-image: url("../../icons/icon-vk.svg");
+  }
+
+  &--vk:hover {
+    &::before {
+      background-image: url("../../icons/icon-vk--active.svg");
+    }
+  }
+
+  &--pint::before {
+    background-image: url("../../icons/icon-pinterest.svg");
+  }
+
+  &--pint:hover::before {
+    background-image: url("../../icons/icon-pinterest--active.svg");
+  }
+
+  &--ok::before {
+    background-image: url("../../icons/icon-ok.svg");
+  }
+
+  &--ok:hover::before {
+    background-image: url("../../icons/icon-ok--active.svg");
+  }
+}
