@@ -1,0 +1,17 @@
+.main-nav__toggle {
+  @media(max-width: $mobile-width-only) {
+      display: block;
+      width: 60px;
+      height: 60px;
+      padding: 0;
+      background-color: $base-white;
+      border: none;
+      cursor: pointer;
+      position: relative;
+  }
+
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
+}
+

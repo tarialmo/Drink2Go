@@ -1,0 +1,76 @@
+.filter__radio {
+  margin-bottom: 34px;
+}
+
+.radio__item {
+  padding-left: 34px;
+}
+
+.radio__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.radio__input + .radio__label::before {
+  position: absolute;
+  content: "";
+  left: -34px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid $base-grey;
+  border-radius: 50%;
+}
+
+.radio__input:hover + .radio__label::before,
+.radio__input:focus + .radio__label::before {
+  border-color: $base-primary;
+  opacity: 0.25;
+}
+
+.radio__input:hover + .radio__label::after,
+.radio__input:focus + .radio__label::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: $base-primary;
+  opacity: 0.25;
+  border-radius: 50%;
+}
+
+.radio__input:checked + .radio__label::before {
+  border-color: $base-primary;
+  opacity: 1;
+}
+
+.radio__input:checked + .radio__label::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: $base-primary;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.radio__input:disabled + .radio__label {
+  color: $light-grey;
+
+  &::before {
+    border-color: $light-grey;
+  }
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+.radio__input:disabled:hover + .radio__label,
+.radio__input:disabled:focus + .radio__label {
+  display: none;
+}

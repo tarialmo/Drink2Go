@@ -1,0 +1,100 @@
+.goods-card {
+  height: 100%;
+  width: 280px;
+  padding: 40px 20px 20px 18px;
+  box-sizing: border-box;
+  background-color: $base-white;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    padding: 50px 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+  }
+}
+
+.goods-card__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 24px;
+  max-width: 240px; //
+  height: 188px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.goods-card__image {
+  object-fit: contain;
+}
+
+.goods-card__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: start;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.goods-card__description {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.goods-card__price-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods-card__price {
+  display: block;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.goods-card__button {
+  min-width: 141px;
+  height: 34px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 42px;
+  font-size: 14px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 22px;
+    width: 20px;
+    height: 16px;
+    background-image: url("../../icons/icon-basket-plus.svg");
+  }
+}

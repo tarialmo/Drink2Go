@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../../fonts/montserrat-regular.woff2") format("woff2"),
+    url("../../fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../../fonts/montserrat-bold.woff2") format("woff2"),
+    url("../../fonts/montserrat-bold.woff") format("woff");
+}
+
+/*
+Заголовок слайдера
+desktop и tablet
+font-size: 56px;
+line-height: 80px;
+font-weight: 700;
+
+mobile
+font-size: 36px;
+line-height: 48px;
+font-weight: 700;
+
+
+Текст описания
+tablet, desktop
+font-size: 20px;
+line-height: 32px;
+font-weight: 400;
+
+mobile
+font-size: 14px;
+line-height: 20px;
+font-weight: 400;
+
+h2
+tablet, desktop
+font-size: 42px;
+line-height: 64px;
+font-weight: 700;
+
+mobile
+font-size: 24px;
+line-height: 36px;
+font-weight: 400;
+
+h3(скорость)
+tablet, desktop
+font-size: 24px;
+line-height: 36px;
+font-weight: 700;
+
+mobile
+font-size: 18px;
+line-height: 32px;
+font-weight: 700;
+
+заголовок(интернет-магазин)
+font-size: 14px;
+line-height: 20px;
+font-weight: 700;
+
+новинка
+font-size: 12px;
+line-height: 16px;
+font-weight: 700;
+letter: 4%;
+
+цена новая
+font-size: 20px;
+line-height: 32px;
+font-weight: 600;
+
+цена старая
+font-size: 16px;
+line-height: 32px;
+font-weight: 400;
+
+*/

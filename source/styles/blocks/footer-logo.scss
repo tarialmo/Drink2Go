@@ -1,0 +1,24 @@
+.footer-logo__link {
+  display: block;
+  position: relative;
+}
+
+.footer-logo__img {
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.footer-logo__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+    margin-bottom: 56px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $base-black;
+  }
+}

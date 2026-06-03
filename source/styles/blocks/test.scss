@@ -1,0 +1,36 @@
+.page-header__logo {
+  display: block;
+  margin-top: 22px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 320px;
+    align-items: center;
+  }
+}
+
+.page-header__logo img {
+  @media (min-width: $tablet-width) {
+    height: 36px;
+    width: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+
+.page-header__logo-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    height: auto;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 20px;
+    color: $base-black;
+  }
+}
+

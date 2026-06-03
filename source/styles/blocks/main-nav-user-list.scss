@@ -1,0 +1,95 @@
+.user-list {
+  display: flex;
+  //flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    max-width: 320px;
+    gap: 20px;
+  }
+}
+
+.user-list__link {
+  width: 60px;
+  height: 60px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 22px;
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+
+    &::before {
+      top: 32px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 32px 20px 32px 47px;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.user-list__login::before {
+  background-image: url("../../icons/icon-login.svg");
+}
+
+.user-list__login:hover,
+.user-list__login:focus {
+  color: $base-primary;
+
+  &::before {
+    background-image: url("../../icons/icon-login--hover.svg");
+  }
+}
+
+.user-list__login:active {
+  background-color: $base-secondary;
+  color: $base-primary;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      background-image: url("../../icons/icon-login--hover.svg");
+    }
+  }
+}
+
+.user-list__basket::before {
+  background-image: url("../../icons/icon-basket.svg");
+}
+
+.user-list__basket:hover,
+.user-list__basket:focus {
+  color: $base-primary;
+
+  &::before {
+    background-image: url("../../icons/icon-basket--hover.svg");
+  }
+}
+
+.user-list__basket:active {
+  background-color: $base-secondary;
+  color: $base-primary;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      background-image: url("../../icons/icon-basket--hover.svg");
+    }
+  }
+}
+
+.user-list__label {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
